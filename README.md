@@ -9,6 +9,7 @@
 - Ruby
 - VSC (Code Editor)
 - Git and Github
+- Git Bash
 
 ## Game Explanation
 
