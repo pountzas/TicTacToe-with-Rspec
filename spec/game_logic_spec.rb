@@ -1,7 +1,6 @@
 # spec../lib/game_logic.rb
 
 require_relative '../lib/game_logic'
-# require '../bin/main'
 
 winning_numbers = [
   [1, 2, 3],
