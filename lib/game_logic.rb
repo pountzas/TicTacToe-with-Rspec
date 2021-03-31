@@ -75,7 +75,7 @@ class Game
 end
 
 def design_board(slots)
-  a = "    ¤---¤---¤---¤
+  "    ¤---¤---¤---¤
     ¦ #{slots[0]} ¦ #{slots[1]} ¦ #{slots[2]} ¦
     ¤---¤---¤---¤
     ¦ #{slots[3]} ¦ #{slots[4]} ¦ #{slots[5]} ¦
