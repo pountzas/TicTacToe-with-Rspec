@@ -34,36 +34,48 @@ class Game
     tie = false
     until tie
       # Make board First time.
-      design_board(slots)
+      puts design_board(slots)
       # Define remaining_slots variable.
       remaining_slots = slots.select { |item| item.is_a? Integer }
       # Player 1 turn.
       player_turn(slots, @player1.name, 'X', remaining_slots, player1_arr)
       sleep 1
       # Check If player 1 wins with his move.
-      design_board(slots)
+      puts design_board(slots)
       break if winner(@player1, player1_arr, winning_numbers)
 
       # Clear board so winner message does not stay in the screen in a tie.
-      design_board(slots)
+      puts design_board(slots)
       # Check if it is a tie.
       break if tie(slots)
 
       # Redefine remaining_slots to give players their real options.
       remaining_slots = slots.select { |item| item.is_a? Integer }
       # Clear board so tie message does not stick in the screen.
-      design_board(slots)
+      puts design_board(slots)
       # Player 2 turn.
       player_turn(slots, @player2.name, 'O', remaining_slots, player2_arr)
       sleep 1
       # Check If player 2 wins with his move.
-      design_board(slots)
+      puts design_board(slots)
       break if winner(@player2, player2_arr, winning_numbers)
 
       # Clear board so winner message does not stay in the screen in a tie.
-      design_board(slots)
+      puts design_board(slots)
       # Check if it is a tie
       break if tie(slots)
     end
   end
+end
+
+def design_board(slots)
+  system('clear')
+  system('cls')
+  "    ¤---¤---¤---¤
+    ¦ #{slots[0]} ¦ #{slots[1]} ¦ #{slots[2]} ¦
+    ¤---¤---¤---¤
+    ¦ #{slots[3]} ¦ #{slots[4]} ¦ #{slots[5]} ¦
+    ¤---¤---¤---¤
+    ¦ #{slots[6]} ¦ #{slots[7]} ¦ #{slots[8]} ¦
+    ¤---¤---¤---¤"
 end
