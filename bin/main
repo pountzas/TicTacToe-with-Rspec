@@ -62,5 +62,10 @@ def player_turn(arr, name, symbol, remaining_slots, player_arr)
   end
 end
 
+def clear
+  system('clear')
+  system('cls')
+end
+
 new_game = Game.new(player1, player2)
 new_game.start_game(slots, player1_arr, player2_arr, winning_numbers)
