@@ -30,6 +30,8 @@ class Game
     return true if slots.none? { |item| item.is_a? Integer }
   end
 
+  # rubocop: disable Metrics/MethodLength
+
   def start_game(slots, player1_arr, player2_arr, winning_numbers)
     tie = false
     until tie
@@ -72,10 +74,12 @@ class Game
       break if tie(slots)
     end
   end
+
+  # rubocop: enable Metrics/MethodLength
 end
 
 def design_board(slots)
-  a = "    ¤---¤---¤---¤
+  "    ¤---¤---¤---¤
     ¦ #{slots[0]} ¦ #{slots[1]} ¦ #{slots[2]} ¦
     ¤---¤---¤---¤
     ¦ #{slots[3]} ¦ #{slots[4]} ¦ #{slots[5]} ¦

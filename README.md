@@ -4,12 +4,14 @@
 
 > This project goal is to create a tic tac toe game using only Ruby.
 
-## Built With
+## Built With And Tested
 
 - Ruby
 - VSC (Code Editor)
 - Git and Github
 - Git Bash
+- Rubocop
+- Rspec
 
 ## Game Explanation
 
@@ -51,6 +53,14 @@ If you always pay attention and look ahead, you'll never lose a game of Tic-Tac-
   * Open the repository files in your terminal.
   * Run main.rb file.
   * Play.
+
+### Testing
+  * Open your terminal
+  * To install Rspec, run the following command into your terminal: </br>
+  ``` gem install rspec ```
+  * Go to your local project repository with the cd command.
+  * To run the test examples, run the following command into your terminal: </br>
+``` rspec ```
   
 ## Authors
 
